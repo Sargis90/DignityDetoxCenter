@@ -1,0 +1,554 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.conteainer{
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+
+.header:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(238, 245, 245);
+	z-index: 2;
+}
+
+.header_body{
+    width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	height: 80px;
+	align-items: center;
+}
+
+.header_logo{
+	width: 100px;
+    height: 78px;
+	position: relative;
+	z-index: 3;
+}
+
+.header_logo img{
+	width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.header_burger{
+	display: none;
+}
+.header_menu{
+    width: 1000px;
+}
+.header_list{
+	display: flex;
+    justify-content: space-evenly;
+	position: relative;
+	z-index: 2;
+    flex-grow: 1;
+}
+
+.header_list li{
+	list-style: none;
+	margin: 0px 0px 0px 20px;
+}
+
+.header_link{
+	color: black;
+	text-transform: uppercase;
+	font-size: 25px;
+	text-decoration: none;
+    transition: 1s;
+    display: block;
+    padding: 15px 25px;
+    
+}
+.header_link:hover{
+    transform: skewY(-3deg);
+    background-color:rgb(245, 190, 119);
+    color: #fff;
+    display: block;
+    box-shadow: 0 0 10px 4px  rgb(238, 219, 194);
+}
+.comfortablePlaceBox{
+    width: 100%;
+    height: 600px;
+    background: url(img/home.webp) 0 -80px / cover no-repeat;
+}
+
+
+.comfortablePlaceBoxFlex{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   /* background-color: rgba(255,255,255,0.1); */
+}
+.comfortablePlaceBoxHeader{
+    width: 900px;
+    height: 350px;
+    text-align: center;
+    line-height: 2;
+}
+.comfortablePlaceBoxHeader h1{
+    font-size: 70px
+}
+.comfortablePlaceBoxHeaderMenu{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.comfortablePlaceBoxHeader h4, .comfortablePlaceBoxHeader h1, .comfortablePlaceBoxHeader h3{
+    color: #fff;
+}
+.comfortablePlaceBoxHeaderMenu div{
+    width: 150px;
+    height: 70px;
+    font-size: 20px;
+    background-color: rgb(245, 190, 119);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 1s;
+  
+}
+.comfortablePlaceBoxHeaderMenu div:hover{
+    background-color:#fff;
+    color: rgb(245, 190, 119);
+    box-shadow: 0 0 10px 5px  rgb(245, 190, 119);
+    border-radius: 10px
+}
+.callBox{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    line-height: 2;
+}
+.callBox button{
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 70px;
+    background-color: rgb(245, 190, 119);
+    color: #fff;
+    font-size: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.callBox button:hover{
+    background-color:#fff;
+    color: rgb(245, 190, 119);
+    box-shadow: 0 0 10px 5px  rgb(245, 190, 119);
+    border-radius: 20px;
+}
+.IntegratedBox{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Integrated{
+    width: 900px;
+    height: 90%;
+    border-right: 1px solid black;
+    margin: 5px;
+}
+.IntegratedImageBox{
+    width: 700px;
+    height: 90%;
+    background:url(img/poor.jpg)center/100% 100% no-repeat;
+    margin: 5px;
+}
+.Integrated h4{
+    padding-left: 50px;
+    color: rgba(182, 193, 193,0.8);
+    margin-bottom: 15px;
+}
+.Integrated h1{
+    padding-left: 50px;
+    margin-bottom: 15px;
+}
+
+.Integrated p{
+    padding-left: 50px;
+    margin-top: 80px;
+}
+.Integrated button{
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 70px;
+    background-color: rgb(245, 190, 119);
+    color: #fff;
+    font-size: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: 1s;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+.Integrated button:hover{
+    background-color:#fff;
+    color: rgb(245, 190, 119);
+    box-shadow: 0 0 10px 5px  rgb(245, 190, 119);
+    border-radius: 20px;
+}
+.houseBox{
+    width: 100%;
+    height: 400px;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.houseCol1{
+    width: 350px;
+    height: 350px;
+    background: url(img/bed.jpg)center/cover no-repeat;
+    transition: 1s;
+    margin: 5px;
+}
+.houseCol2{
+    width: 350px;
+    height: 350px;
+    background: url(img/bedroom.jpg)center/cover no-repeat;
+    transition: 1s;
+    margin: 5px;
+}
+.houseCol3{
+    width: 350px;
+    height: 350px;
+    background: url(img/kitchen.jpg)center/cover no-repeat;
+    transition: 1s;
+    margin: 5px;
+}
+.houseCol4{
+    width: 350px;
+    height: 350px;
+    background: url(img/livingroom.jpg)center/cover no-repeat;
+    transition: 1s;
+    margin: 5px;
+}
+.learnMore{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    transition: 1s;
+
+}
+.learnMore button{
+    width: 150px;
+    height: 60px;
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 1s;
+}
+.learnMore button:hover{
+    border-color:rgb(245, 190, 119);
+    box-shadow: 0 0 10px 5px  rgb(245, 190, 119);
+}
+.certificatbox{
+    width: 100%;
+    height: 400px;
+}
+.certificatHeader{
+    text-align: center;
+    padding-top: 50px;
+}
+.certificatImage{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    word-spacing: 20px;
+}
+.addictionImageBox{
+    width: 800px;
+    height: 90%;
+    background:url(img/bed.jpg)center/100% 100% no-repeat;
+    margin: 5px;
+}
+.addiction{
+    width: 900px;
+    height: 90%;
+    margin: 5px;
+}
+
+.addiction h4{
+    padding-left: 50px;
+    color: rgba(182, 193, 193,0.8);
+    margin-bottom: 15px;
+}
+.addiction h1{
+    padding-left: 50px;
+    margin-bottom: 15px;
+}
+
+.addiction p{
+    padding-left: 50px;
+    margin-top: 80px;
+}
+.addiction button{
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 70px;
+    background-color: rgb(245, 190, 119);
+    color: #fff;
+    font-size: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: 1s;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+.addiction button:hover{
+    background-color:#fff;
+    color: rgb(245, 190, 119);
+    box-shadow: 0 0 10px 5px  rgb(245, 190, 119);
+    border-radius: 20px;
+}
+.absolutelyImageBox{
+    width: 700px;
+    height: 90%;
+    background:url(img/kitchenrooms.jpg)center/100% 100% no-repeat;
+    margin: 5px;
+}
+
+
+
+@media (max-width:1200px){
+    .IntegratedBox{
+        height: 700px;
+    }
+}
+
+
+@media (max-width: 900px){
+	body.lock{
+		overflow: hidden;
+	}
+	.header_body{
+		height: 50px;
+	}
+	
+	.header_burger{
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		z-index: 3;
+        cursor: pointer;
+	}
+	.header_burger:before,
+	.header_burger:after{
+		content: '';
+		background-color: #0e0000;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+       
+	}
+	.header_burger span{
+		position: absolute;
+		background-color: #0a0000;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+	}
+	.header_burger:before{
+		top: 0;
+	}
+	.header_burger:after{
+		bottom: 0;
+	}
+	.header_burger.active:before{
+		transform: rotate(45deg);
+		top: 9px;
+	}
+	.header_burger.active:after{
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+	.header_burger.active span{
+		transform: scale(0);
+	}
+
+
+	.header_menu{
+		position: fixed;
+        line-height: 4;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		transition: all 1s ease 0s;
+		background-color: rgb(214, 236, 236);
+		padding: 70px 10px 20px 10px;
+	}
+	.header_menu.active{
+		top: 0;
+        padding-top: 150px;
+	}
+	.header_list{
+		display: block;
+	}
+	.header_list li {
+		margin: 0px 0px 20px 0px;
+	}
+    .header_body{
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+    
+    .IntegratedBox{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .Integrated{
+        height: 700px;
+        padding-top: 50px;
+    }
+    .IntegratedImageBox{
+        width: 900px;
+        height: 1000px;
+    }
+    .addiction{
+        height: 700px;
+        padding-top: 50px;
+    }
+    .addictionImageBox{
+        width: 900px;
+        height: 1000px;
+    }
+    .absolutelyImageBox{
+        width: 900px;
+        height: 1000px;
+    }
+    .houseBox{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .certificatbox{
+        height: auto;
+    }
+}
+
+
+@media (max-width:640px){
+    .comfortablePlaceBoxHeader h1{
+        font-size: 50px
+    }
+    .Integrated button{
+        margin-top: 20px;
+    }
+    .addiction button{
+        margin-top: 20px;
+    }
+    .callBox button{
+        height: 50px;
+    }
+}
+@media (max-width:470px){
+    .comfortablePlaceBoxHeaderMenu{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .comfortablePlaceBox{
+        height: 800px;
+    }
+    .comfortablePlaceBoxHeader h1{
+        font-size: 30px
+    }
+    .comfortablePlaceBoxHeaderMenu div{
+        width: 300px;
+        margin-top: 10px;
+    }
+    .callBox{
+        height: 400px;
+    }
+    .callBox h1 { 
+        font-size: 20px;
+    }
+    .Integrated p{
+        margin-top: 20px;
+        padding-left: 5px;
+    }
+    .Integrated button{
+        height: 50px;
+        margin-left: 5px;
+    }
+    .Integrated h1{
+        font-size: 25px;
+        padding-left: 5px;
+    }
+    .Integrated h4{
+        padding-left: 5px;
+    }
+    .addiction{
+        text-align: center;
+    }
+    .addiction p{
+        margin-top: 20px;
+        padding-left: 5px;
+    }
+    .addiction button{
+        height: 50px;
+        margin-left: 5px;
+    }
+    .addiction h1{
+        font-size: 25px;
+        padding-left: 5px;
+    }
+    .addiction h4{
+        padding-left: 5px;
+    }
+    .addiction{
+        text-align: center;
+    }
+}
